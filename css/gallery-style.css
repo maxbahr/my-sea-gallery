@@ -1,0 +1,21 @@
+.modal-dialog {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%) !important;
+}
+
+.img-thumbnail {
+    margin: 5px;
+    width: 15rem;
+}
+
+div.modal-content {
+    width: 700px;
+    height: auto;
+}
+
+div.modal-content img {
+    width: 650px;
+    height: inherit;
+}

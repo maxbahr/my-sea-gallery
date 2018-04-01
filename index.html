@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morze Bałtyckie</title>
+    <!-- Czcionki -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500i&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- style -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
+    
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap-tab-history/vendor/assets/javascripts/bootstrap-tab-history.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <p class="text-right hamburger"><i class="fa fa-bars" aria-hidden="true"></i>
+        </p>
+        <nav class="nav nav-pills flex-column flex-sm-row fixed-top" id="main-nav" role="tablist">                
+            <a href="#home" 
+                class="nav-item nav-link active" 
+                id="nav-home-tab" 
+                data-toggle="tab" 
+                data-tab-history="true" 
+                data-tab-history-changer="push"
+                data-tab-history-update-url="true"                 
+                role="tab" 
+                aria-controls="nav-home" 
+                aria-selected="true">
+                <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Strona główna
+            </a>
+            <a href="#info" 
+                class="nav-item nav-link" 
+                id="nav-info-tab" 
+                data-toggle="tab" 
+                data-tab-history="true" 
+                data-tab-history-changer="push"
+                data-tab-history-update-url="true"                 
+                role="tab" 
+                aria-controls="nav-info" 
+                aria-selected="false">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Informacje
+            </a>
+            <a href="#gallery"
+                class="nav-item nav-link" 
+                id="nav-gallery-tab" 
+                data-toggle="tab" 
+                data-tab-history="true" 
+                data-tab-history-changer="push"
+                data-tab-history-update-url="true"
+                role="tab" 
+                aria-controls="nav-gallery" 
+                aria-selected="false">
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>&nbsp;Galeria
+            </a>
+            <a href="#contact" 
+                class="nav-item nav-link" id="nav-contact-tab" 
+                data-toggle="tab" 
+                data-tab-history="true" 
+                data-tab-history-changer="push"
+                data-tab-history-update-url="true"                 
+                role="tab" 
+                aria-controls="nav-contact" 
+                aria-selected="false">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;Kontakt</a>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <!-- Home -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="gallery/carusel01.jpg" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Ludzie są jak morze, czasem łagodni i przyjaźni,
+                                                <br>czasem burzliwi i zdradliwi. Przede wszystkim to jednak tylko woda.</h3>
+                                            <p>Albert Einstein</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="gallery/carusel02.jpg" alt="Second slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>W kroplach dni powszednich, tak samo jak i w morzu,
+                                                <br>całe niebo można zobaczyć.</h3>
+                                            <p>Maria Dąbrowska</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="gallery/carusel03.jpg" alt="Third slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Podejmując walkę z żywiołem, pokonuje słabość swych mięśni,
+                                                <br>zwycięża w zmaganiach z ogromną rybą i morzem.</h3>
+                                            <p>Ernest Hemingway</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <h1>Poznaj Morze Bałtyckie!!!</h1>
+                            <h3>Jedni narzekają, że zimne, inni wspominają wspaniałe chwile spędzone nad polskim morzem.</h3>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width: inherit;">
+                                    <img class="card-img-top" src="gallery/18.jpg" alt="Info">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Informacje</h4>
+                                        <p class="card-text">Poznaj Morze Bałtyckie w liczbach. Dowiedz się więcej o miejscu nad które ściągają
+                                            miliony Polaków w czasie wakacji.</p>
+                                        <a id="goToInfo" href="#info" class="btn btn-primary">Poznaj</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: inherit;">
+                                    <img class="card-img-top" src="gallery/28.jpg" alt="Galeria">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <i class="fa fa-camera-retro" aria-hidden="true"></i>&nbsp;Galeria</h4>
+                                        <p class="card-text">Zdjęcia przedstawiają Morze Bałtyckie w różnych porach dnia. Kiedy świeci słońce
+                                            i gdy pada deszcz. Na morzu i na brzegu spoglądamy na fale i na piękne zachody
+                                            słońca.
+                                        </p>
+                                        <a id="goToGallery" href="#gallery" class="btn btn-primary">Zobacz zdjęcia</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" style="width: inherit;">
+                                    <img class="card-img-top" src="gallery/12.jpg" alt="Kontakt">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;Kontakt</h4>
+                                        <p class="card-text">Skontaktuj się z nami.
+                                            <br>Zostaw swóje dane, napisz parę słów, a my postaramy się odpowiedzieć na Twoje
+                                            pytania.
+                                        </p>
+                                        <a id="goToContact" href="#contact" class="btn btn-primary">Kontakt do nas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Informacje -->
+            <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="nav-info-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <article>
+
+                                <h1>Morze Bałtyckie vel Bałtyk (łac. balteus – pas)</h1>
+                                <p class="text-left small">Źródło: <a target="_blank" href="https://pl.wikipedia.org/wiki/Morze_Ba%C5%82tyckie" title="Wikipedia"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>
+                                </a></p>
+
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Baltic_drainage_basins_%28catchment_area%29.svg" alt="mapa"
+                                    id="mapa">
+                                <p>
+                                    Nazwa Bałtyku znanego również jako Morze Scytyjskie pojawia się po raz pierwszy u Adama z Bremy - morze śródlądowe na szelfie
+                                    kontynentalnym w północnej Europie. Połączone z Morzem Północnym przez Cieśniny Duńskie:
+                                    <ul>
+                                        <li>Mały Bełt</li>
+                                        <li>Wielki Bełt</li>
+                                        <li>Sund</li>
+                                        <li>Kattegat</li>
+                                        <li>Skagerrak</li>
+                                        <li>Limfjord</li>
+                                    </ul>
+                                    Za zachodnią granicę Bałtyku Właściwego przyjmuje się cieśninę Sund i próg podwodny ciągnący się na głębokości 18–20 m od
+                                    przylądka Gedser (wyspa Falster) do przylądka Darßer Ort (Darß); na zachód od tej linii
+                                    znajduje się akwen Bałtyku Zachodniego o powierzchni ok. 8000 km² nazywany przez Niemców
+                                    także Ostsee; akwen ten obejmuje m.in. część wód Cieśnin Duńskich (oprócz Małego i Wielkiego
+                                    Bełtu), a także mniejsze:
+                                    <ul>
+                                        <li>Alsenbelt</li>
+                                        <li>Fehmarnbelt</li>
+                                        <li>Langelandsbælt</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Charakterystyka Bałtyk nazywany jest morzem śródlądowym północnej Europy, ponieważ ze wszystkich stron jest otoczony lądem,
+                                    a z Morzem Północnym łączy go jedynie kilka płytkich cieśnin. Położone jest w północnej
+                                    strefie klimatu umiarkowanego. Oba morza leżą na tym samym szelfie kontynentalnym. rozciągłość
+                                    południkowa – ok. 1300 km rozciągłość równoleżnikowa najszersza (przez Zatokę Fińską)
+                                    – ok. 600 km rozciągłość równoleżnikowa najwęższa (przez Zatokę Botnicką) – 100 km rozciągłość
+                                    równoleżnikowa poniżej Gotlandii – ok. 250 km Powierzchnia Powierzchnia Bałtyku wraz
+                                    z Kattegatem wynosi ok. 415 266 km². Bez Kattegatu Bałtyk zajmuje 392 979 km². Powierzchnia
+                                    zlewni wynosi 1 721 233 km². Objętość morza wynosi 21 721 km³. Linia brzegowa Bałtyku
+                                    o długości ok. 8100 km jest mocno rozwinięta i urozmaicona. Składa się na to duża ilość
+                                    zalewów, zatok, półwyspów oraz wysp i wysepek, szczególnie licznych przy wybrzeżach północnym
+                                    i zachodnim.
+
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Baltic_Sea_map.png" alt="morze" id="sea">
+
+                                    <h3>Największe zatoki</h3>
+
+                                    <h4>Trzy wybitne rozgałęzienia Bałtyku tworzą wielkie zatoki: </h4>
+                                    <ul>
+                                        <li>Zatoka Botnicka o powierzchni 117 000 km²</li>
+                                        <li>Zatoka Fińska o powierzchni 30 000 km²</li>
+                                        <li>Zatoka Ryska o powierzchni 17 000 km²</li>
+                                    </ul>
+
+                                    <h4>Z innych większych zatok należy wymienić zatoki:</h4>
+                                    <ul>
+                                        <li>Gdańską</li>
+                                        <li>Pomorską</li>
+                                        <li>Lubecką</li>
+                                        <li>Kilońską</li>
+                                        <li>Zalew Kuroński</li>
+                                    </ul>
+
+
+                                    <div class="clearRightFloat">
+                                        <h4>Większe półwyspy</h4>
+                                        <table class="table table-hover">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th scope="col">Półwysep</th>
+                                                    <th scope="col">Długość km</th>
+                                                    <th scope="col">Szerokość km</th>
+                                                    <th scope="col">Państwo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Mierzeja Kurońska</th>
+                                                    <td>98</td>
+                                                    <td>0,4–4</td>
+                                                    <td>Litwa/Rosja</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Mierzeja Wiślana</th>
+                                                    <td>60</td>
+                                                    <td>0,6–2</td>
+                                                    <td>Polska/Rosja</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Fischland-Darß-Zingst</th>
+                                                    <td colspan="2">7</td>
+                                                    <td>Niemcy</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Mierzeja Helska</th>
+                                                    <td colspan="2">0,3–0,1–3</td>
+                                                    <td>Polska</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </p>
+                                
+                            </article>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Galeria -->
+            <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h1>Morze Bałtyckie w obiektywie aparatu</h1>
+                            <img class="img-thumbnail" src="gallery/01.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/01.jpg">
+                            <img class="img-thumbnail" src="gallery/02.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/02.jpg">
+                            <img class="img-thumbnail" src="gallery/03.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/03.jpg">
+                            <img class="img-thumbnail" src="gallery/04.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/04.jpg">
+                            <img class="img-thumbnail" src="gallery/05.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/05.jpg">
+                            <img class="img-thumbnail" src="gallery/06.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/06.jpg">
+                            <img class="img-thumbnail" src="gallery/07.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/07.jpg">
+                            <img class="img-thumbnail" src="gallery/08.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/08.jpg">
+                            <img class="img-thumbnail" src="gallery/09.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/09.jpg">
+                            <img class="img-thumbnail" src="gallery/10.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/10.jpg">
+                            <img class="img-thumbnail" src="gallery/11.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/11.jpg">
+                            <img class="img-thumbnail" src="gallery/12.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/12.jpg">
+                            <img class="img-thumbnail" src="gallery/13.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/13.jpg">
+                            <img class="img-thumbnail" src="gallery/14.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/14.jpg">
+                            <img class="img-thumbnail" src="gallery/15.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/15.jpg">
+                            <img class="img-thumbnail" src="gallery/16.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/16.jpg">
+                            <img class="img-thumbnail" src="gallery/17.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/17.jpg">
+                            <img class="img-thumbnail" src="gallery/18.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/18.jpg">
+                            <img class="img-thumbnail" src="gallery/19.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/19.jpg">
+                            <img class="img-thumbnail" src="gallery/20.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/20.jpg">
+                            <img class="img-thumbnail" src="gallery/21.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/21.jpg">
+                            <img class="img-thumbnail" src="gallery/22.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/22.jpg">
+                            <img class="img-thumbnail" src="gallery/23.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/23.jpg">
+                            <img class="img-thumbnail" src="gallery/24.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/24.jpg">
+                            <img class="img-thumbnail" src="gallery/25.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/25.jpg">
+                            <img class="img-thumbnail" src="gallery/26.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/26.jpg">
+                            <img class="img-thumbnail" src="gallery/27.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/27.jpg">
+                            <img class="img-thumbnail" src="gallery/28.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/28.jpg">
+                            <img class="img-thumbnail" src="gallery/29.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/29.jpg">
+                            <img class="img-thumbnail" src="gallery/30.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/30.jpg">
+                            <img class="img-thumbnail" src="gallery/31.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/31.jpg">
+                            <img class="img-thumbnail" src="gallery/32.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/32.jpg">
+                            <img class="img-thumbnail" src="gallery/33.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/33.jpg">
+                            <img class="img-thumbnail" src="gallery/34.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/34.jpg">
+                            <img class="img-thumbnail" src="gallery/35.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/35.jpg">
+                            <img class="img-thumbnail" src="gallery/36.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/36.jpg">
+                            <img class="img-thumbnail" src="gallery/37.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/37.jpg">
+                            <img class="img-thumbnail" src="gallery/38.jpg" alt="jpg" data-toggle="modal" data-target="#bigPhoto" data-src="gallery/38.jpg">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="bigPhoto" tabindex="-1" role="dialog" aria-labelledby="bigPhotoLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bigPhotoLabel">Zdjęcie
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-center">
+                                    <img class="photo" src="gallery/01.jpg" alt="01">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kontakt -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h1>Zapraszamy do kontaktu !</h1>
+                            <div class="alert alert-success text-center">
+                                    <strong>Super!</strong> Dziękujemy za przesłanie wiadomości.
+                                  </div>
+                            <div class="alert alert-danger text-center">
+                                <strong>Uwaga!</strong> Wypełnij wszystkie pola prawidłowo.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="gallery/ver_sunset.jpg" alt="sunset" style="width: inherit;">
+                                </div>
+     
+                                <div class="col-md-8">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">* Imię:</label>
+                                            <input type="text" class="form-control" id="name" maxlength="50" placeholder="Tu podaj swoje imię">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName">* Nazwisko:</label>
+                                            <input type="text" class="form-control" id="lastName" maxlength="50" placeholder="Tu podaj swoje nazwisko">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Telefon:</label>
+                                            <input type="tel" class="form-control" maxlength="15" placeholder="Tu podaj swój numer telefonu"  id="phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">* Email:</label>
+                                            <input type="email" class="form-control" id="email" maxlength="50" placeholder="Tu podaj swój adres email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Jaki transport wybierzesz nad morze?</label>
+                                            <p>
+                                                <span class="radio-inline text-nowrap"><input type="radio" name="tansport" value="car"><i class="fa fa-car fa-3" aria-hidden="true"></i>auto
+                                                </span>
+                                                <span class="radio-inline text-nowrap"><input type="radio" name="tansport" value="bus"><i class="fa fa-bus fa-3" aria-hidden="true"></i>autobus
+                                                </span>
+                                                <span class="radio-inline text-nowrap"><input type="radio" name="tansport" value="train"><i class="fa fa-train fa-3" aria-hidden="true"></i>pociąg
+                                                </span> 
+                                                <span class="radio-inline text-nowrap"><input type="radio" name="tansport" value="do-not-know"><i class="fa fa-question-circle-o fa-3" aria-hidden="true"></i>
+                                                    jeszcze nie wiem
+                                                </span> 
+                                            </p>
+                                            </div>
+
+                                        <div class="form-group">
+                                            <label for="msg">* Napisz wiadomość:</label>                                            
+                                            <textarea class="form-control" name="msg" id="msg" cols="30" rows="10" maxlength="500" placeholder="Tu wpisz wiadomość (max 500 znaków)"></textarea>
+                                            <span id="charNum"></span>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Chcę otrzymywać powiadomienia ze strony.</label>
+                                        </div>
+                                        <div style="margin-top: 20px"></div>
+                                        <button type="submit" class="btn btn-success" style="font-stretch: ultra-expanded; font-weight: 900" ><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
+                                            Wyślij wiadomość</button>
+                                            <button class="btn btn-danger" type="reset"><small>Wyczyść</small></button>
+                                            <p class="text-muted"><small><strong>*</strong> Pole wymagane</small></p>
+                                        </div>                                        
+                                    </form>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <dir class="row">
+                <div class="col-md text-center">
+                    <span>Projekt Html -
+                        <strong>Wrocław 2017</strong> - Maksymilian Bahr</span>
+                </div>
+            </dir>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+    </a>
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    
+    <!-- moje skrypty     -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        $('#bigPhoto').on('show.bs.modal', function (event) {
+            var img = $(event.relatedTarget) // img that triggered the modal
+            var src = img.data('src') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('Zdjęcie \'' + src + '\'')
+            modal.find('.modal-body img').attr('src', src)
+        })
+    </script>
+</body>
+
+</html>

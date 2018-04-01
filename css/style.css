@@ -1,0 +1,196 @@
+body {
+    /* font-family: 'Amiko', sans-serif; */
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    background-color: #f0f4f7;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#info, #gallery, #contact {
+    margin: 0px 10px;
+    margin-top: 70px;
+}
+
+#home h1 {
+    margin-top: 40px;
+}
+
+img#mapa {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+img#sea {
+    float: right;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.clearRightFloat {
+    clear: right;
+}
+
+article {
+    text-align: justify;
+}
+
+label {
+    font-weight: bolder;
+}
+
+.radio-inline {
+    padding-right: 30px;
+}
+
+.radio-inline i {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#charNum {
+    font-size: small;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none;
+}
+
+.scrollup i {
+    font-size: 40px;
+    color: black;
+}
+
+nav {
+    background-color: #274d69;
+    color: whitesmoke;
+}
+
+nav a {
+    color: whitesmoke;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    border-bottom: 5px solid #11212c;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #1e3d53;
+    border-bottom: 5px solid #11212c;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.card a {
+    background-color: #274d69;
+    border-color:#1e3d53;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+/* media  */
+
+/* @media only screen and (max-device-width: 425px){ */
+@media (max-device-width: 425px){ */
+    body{
+        font-size: 15px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+
+    nav.fixed-top {
+        position: relative;
+    }
+
+    h2,h3,h4 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    #info, #gallery, #contact {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #home #carouselExampleIndicators {
+        display: none;
+    }
+
+    #home {
+        background-image: url("../gallery/ver_sunset.jpg");
+    }
+
+    #home .card img {
+        display: none;     
+    }
+
+    #home .card {
+        margin-bottom: 15px;
+    }
+
+    #info img {
+        margin: 0px;
+        padding: 0px;
+        float: none;
+        width: 100%;
+        height: auto;        
+    }
+
+    #gallery .img-thumbnail {
+        width: 30%;        
+    }
+
+    #gallery .modal-dialog {
+        margin: 0px;
+    }
+
+    #gallery .modal-content {
+        width: 425px;
+    }
+
+    #gallery #bigPhoto img {
+        width: 100%;
+    }
+
+    #contact img {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 40px; 
+        padding: 0px; 
+        padding-right: 10px;
+        margin: 0px 0px; 
+        background-color: #274d69;
+        color: whitesmoke;
+    }
+
+    .nav {
+        display: none;
+    }
+}
